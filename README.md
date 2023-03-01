@@ -6,7 +6,7 @@ Delete a check from the list of checks in this configuration
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: liquibase-github-actions/checks-delete@v4.19.0
+- uses: liquibase-github-actions/checks-delete@v4.19.1
   with:
     # Name of check to delete
     # string
@@ -35,7 +35,7 @@ The liquibase checks delete action accepts all valid liquibase global options as
 ```yaml
 steps:
   - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/checks-delete@v4.19.0
+  - uses: liquibase-github-actions/checks-delete@v4.19.1
     with:
       checkName: ""
       headless: true
