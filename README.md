@@ -6,19 +6,19 @@ Delete a check from the list of checks in this configuration
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: liquibase-github-actions/checks-delete@v4.29.1
+- uses: liquibase-github-actions/checks-delete@v4.29.2
   with:
     # Name of check to delete
     # string
     # Required
     checkName: ""
 
-    # Automatically enable new quality checks in liquibase.checks.conf file when they are available. Options: [true|false]
+    # Automatically enable new policy checks in liquibase.checks.conf file when they are available. Options: [true|false]
     # bool
     # Optional
     autoEnableNewChecks: ""
 
-    # Allows automatic backup and updating of liquibase.checks.conf file when new quality checks are available, or for file format changes. Options: [on|off]
+    # Allows automatic backup and updating of liquibase.checks.conf file when new policy checks are available, or for file format changes. Options: [on|off]
     # bool
     # Optional
     autoUpdate: ""
@@ -40,7 +40,7 @@ The liquibase checks delete action accepts all valid liquibase global options as
 ```yaml
 steps:
   - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/checks-delete@v4.29.1
+  - uses: liquibase-github-actions/checks-delete@v4.29.2
     with:
       checkName: ""
       headless: true
